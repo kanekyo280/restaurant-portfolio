@@ -1,0 +1,39 @@
+.concept {
+    background-image:
+    linear-gradient(rgba(255, 255, 255,  0.5), rgba(255, 255, 255,  0.5)),
+     url(../img/image-from-rawpixel-id-5979119-original.png);
+    height: 64.2rem;
+    background-size: cover;
+    text-align: center;
+
+
+&-inner {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto; // 中央寄せ
+}
+
+ &-text {
+    width: 69rem;
+    height: 34rem;
+    background: #202925;; // デザインに合わせて色調整
+    color: #fff;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_title {
+        font-size: 2.4rem;
+        margin: 4rem 0;
+        font-weight: 400;
+    }
+
+    & p {
+       line-height: calc(36 / 16);
+       text-align-last: left;
+    }
+
+ }
+}
