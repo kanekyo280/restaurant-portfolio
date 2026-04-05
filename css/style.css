@@ -1,6 +1,48 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  box-sizing: border-box; /* paddingやborderをwidth内に含める */
+  margin: 0; /* ブラウザのデフォルト余白をリセット */
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10pxにする */
+}
+
+body {
+  line-height: 1.6;
+}
+
+ul, ol {
+  list-style: none; /* ulのデフォルトの点を消す */
+}
+
+a {
+  text-decoration: none; /* aタグの下線を消す */
+  color: inherit;
+}
+
+img {
+  max-width: 100%; /* 画像がはみ出さないようにする */
+  height: auto;
+  display: block; /* imgの下の謎の隙間をなくす*/
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
 body {
   font-family: "Noto Serif Jpn", sans-serif;
-  font-size: 62.5%;
+  font-size: 1.6rem;
+}
+
+.top_wraper {
+  height: 70rem;
+}
+
+.main-img {
+  background-image: url(../img/img_mv.png);
 }
 
 /*# sourceMappingURL=style.css.map */
