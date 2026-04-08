@@ -1,0 +1,41 @@
+.dish {
+    height: 79.6rem;
+
+    &_title {
+        margin: 10rem 0 4rem;
+    }
+
+    &-inner {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin-bottom: 4rem;
+    }
+
+    &-text {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; // 基本は上詰め
+
+            &_title {
+            font-size: 2.4rem;
+            line-height: 10rem;
+            writing-mode: vertical-rl;
+            margin: 0 auto;
+            font-weight: 400;
+            height: inherit;
+        }
+    }
+
+    
+
+    p {
+        line-height: calc(36 / 16);
+        background-color: #202925;
+        color: #E3E3E3;
+        padding: 1rem;
+        margin-top: auto; 
+        margin-bottom: 0;
+    }
+}
