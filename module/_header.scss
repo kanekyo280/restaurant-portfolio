@@ -1,6 +1,4 @@
-$color1: #202925;
-$color2:#E3E3E3;
-$color3:#91855F;
+@use "../global/setting" as *;
 
 .top_wraper {
     height: 70rem;
@@ -24,6 +22,6 @@ $color3:#91855F;
 }
 
 .menu_list {
-    color: $color1;
+    color: $color1 !important;
     font-size: 2.4rem;
 }

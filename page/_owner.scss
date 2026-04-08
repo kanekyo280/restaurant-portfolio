@@ -1,0 +1,45 @@
+@use "../global/setting" as *;
+
+.owner {
+    height: 80.1rem;
+
+
+    &_title {
+        margin: 10rem 0 4rem;
+    }
+
+    &-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-text {
+        height: 45rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        &_title {
+            font-size: 8rem;
+            font-weight: 400;
+            text-align: left;
+            line-height: calc(115 / 80);
+        }
+    }
+
+    p {
+            line-height: calc(36 / 16);
+            background-color: $color1;
+            padding: 4rem 7.5rem;
+            margin-right: 2rem;
+            color: $color2;
+            text-align: left;
+        }
+
+        &_img {
+            width: 37rem;
+            height: 45rem;
+            object-fit: cover;
+        }
+}

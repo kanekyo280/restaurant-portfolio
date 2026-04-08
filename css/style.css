@@ -56,7 +56,7 @@ body {
 }
 
 .menu_list {
-  color: #202925;
+  color: #202925 !important;
   font-size: 2.4rem;
 }
 
@@ -109,6 +109,11 @@ body {
 
 .pickup {
   background-image: linear-gradient(rgba(145, 133, 95, 0.5), rgba(145, 133, 95, 0.5)), url(../img/image-from-rawpixel-id-5979119-original.png);
+  background-size: cover;
+}
+
+.owner {
+  background-image: linear-gradient(rgba(226, 226, 226, 0.5), rgba(226, 226, 226, 0.5)), url(../img/image-from-rawpixel-id-5979119-original.png);
   background-size: cover;
 }
 
@@ -222,6 +227,43 @@ body {
 }
 .pickup-text_title {
   text-align: left;
+}
+
+.owner {
+  height: 80.1rem;
+}
+.owner_title {
+  margin: 10rem 0 4rem;
+}
+.owner-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owner-text {
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.owner-text_title {
+  font-size: 8rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.4375;
+}
+.owner p {
+  line-height: 2.25;
+  background-color: #202925;
+  padding: 4rem 7.5rem;
+  margin-right: 2rem;
+  color: #E3E3E3;
+  text-align: left;
+}
+.owner_img {
+  width: 37rem;
+  height: 45rem;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
