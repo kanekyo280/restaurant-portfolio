@@ -1,10 +1,14 @@
+#section {
+    text-align: center;
+}
+
 .section_title {
     position: relative;
     text-align: center;
     padding: 1rem;
     display: inline-block;
-    margin: 9rem 0 5.5rem;
     font-size: 4rem;
+    font-weight: 400;
 
     &::before {
         content: '';

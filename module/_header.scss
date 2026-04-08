@@ -4,6 +4,7 @@ $color3:#91855F;
 
 .top_wraper {
     height: 70rem;
+    width: 100%;
 }
 
 .header_inner {
@@ -12,6 +13,10 @@ $color3:#91855F;
     padding: 4rem 14rem 0 14rem;
 }
 
+.title-log {
+    height: 11rem;
+    width: 23rem;
+}
 
 .menu_lists {
     display: flex;
