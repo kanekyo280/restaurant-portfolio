@@ -266,4 +266,25 @@ body {
   object-fit: cover;
 }
 
+.infor {
+  margin-top: 10rem;
+}
+
+.infor-inner {
+  margin: 4rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infor-inner .infor-item {
+  width: 24rem;
+  height: 24rem;
+  object-fit: cover;
+  margin-right: 4rem;
+}
+.infor-inner .infor-item:last-child {
+  margin-right: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

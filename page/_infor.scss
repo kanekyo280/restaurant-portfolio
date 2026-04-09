@@ -1,0 +1,23 @@
+.infor {
+    margin-top: 10rem;
+}
+
+.infor-inner {
+    margin: 4rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+.infor-item {
+    width: 24rem;
+    height: 24rem;
+    object-fit: cover;
+    margin-right: 4rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+}
