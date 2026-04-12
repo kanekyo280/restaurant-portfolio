@@ -60,6 +60,60 @@ body {
   font-size: 2.4rem;
 }
 
+footer {
+  background-color: #202925;
+  width: 100%;
+  height: 52.6rem;
+  position: relative;
+}
+
+.footer-logo {
+  width: 22rem;
+  height: 10.5rem;
+  position: absolute;
+  top: 4rem;
+  left: 40rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 15.4rem;
+  height: 100%;
+  padding-bottom: 10rem;
+}
+
+.footer-table {
+  border-collapse: collapse;
+}
+.footer-table th, .footer-table td {
+  text-align: left;
+  vertical-align: top;
+  padding-bottom: 2rem; /* ★各行の隙間（20px分） */
+  color: #E3E3E3; /* 文字色を一括指定 */
+}
+.footer-table th {
+  font-weight: 400;
+}
+
+.footer-table tr:last-child th,
+.footer-table tr:last-child td {
+  padding-bottom: 0;
+}
+
+.pad_70 th {
+  padding-right: 7rem;
+}
+
+.pad_38 th {
+  padding-right: 3.8rem;
+}
+
+.pad_54 th {
+  padding-right: 5.4rem;
+}
+
 #section {
   text-align: center;
 }

@@ -1,0 +1,59 @@
+@use "../global/setting" as *;
+
+footer {
+    background-color: $color1;
+    width: 100%;
+    height: 52.6rem;
+    position: relative;
+}
+.footer-logo {
+    width: 22rem;
+    height: 10.5rem;
+    position: absolute;
+    top: 4rem;
+    left: 40rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 15.4rem;
+    height: 100%;
+    padding-bottom: 10rem;
+}
+
+.footer-table {
+    border-collapse: collapse; // セルの隙間計算をリセットする（重要）
+
+    th, td {
+        text-align: left;
+        vertical-align: top;
+        padding-bottom: 2rem; /* ★各行の隙間（20px分） */
+        color: $color2;       /* 文字色を一括指定 */
+    }
+
+    th {
+        font-weight: 400;
+    }
+}
+
+.footer-table tr:last-child th,
+.footer-table tr:last-child td {
+    padding-bottom: 0;
+}
+
+
+.pad_70 th {
+    padding-right: 7rem;
+}
+
+.pad_38 th {
+    padding-right: 3.8rem;
+}
+
+.pad_54 th {
+    padding-right: 5.4rem;
+}
+
+
