@@ -287,4 +287,68 @@ body {
   margin-right: 0;
 }
 
+.news {
+  width: 100%;
+}
+.news_title {
+  margin: 10rem 0 4rem;
+}
+.news-container {
+  margin-bottom: 10rem;
+  width: 80rem;
+  margin: 0 auto;
+}
+.news-item {
+  border: 0.1rem solid #707070;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.news-item:last-child {
+  margin-bottom: 10rem;
+}
+.news-item_header {
+  background-color: #91855F;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.news-item_header.open .news-item_day::before {
+  transform: rotate(90deg);
+}
+.news-item_day {
+  line-height: 1.5;
+  margin-right: 3rem;
+}
+.news-item_day::before {
+  content: "▶";
+  margin-right: 1.2rem;
+  margin-left: 4rem;
+  display: inline-block; /* 回転させるために必要 */
+  /* ★アニメーションの設定 */
+  transition: transform 0.3s ease; /* 0.3秒かけて滑らかに変化 */
+}
+.news-item_text[style*="display: block"] {
+  display: flex !important;
+}
+.news-item_text {
+  width: 100%;
+  height: 21.1rem;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.news-item p {
+  text-align: left;
+  line-height: 2.25;
+  color: #202925;
+}
+
+.font_color {
+  color: #E3E3E3;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
 /*# sourceMappingURL=style.css.map */

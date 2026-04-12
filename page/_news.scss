@@ -1,0 +1,80 @@
+@use "../global/setting" as *;
+
+.news {
+    width: 100%;
+
+    &_title {
+        margin: 10rem 0 4rem;
+    }
+
+    &-container {
+        margin-bottom: 10rem;
+        width: 80rem;
+        margin: 0 auto;
+    }
+
+    &-item {
+        border: 0.1rem solid $color4;
+        width: 100%;
+        margin-bottom: 2rem;
+
+        &:last-child {
+            margin-bottom: 10rem;
+        }
+
+        &_header {
+            background-color: $color3;
+            height: 6rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            cursor: pointer; // クリックできることを示すために追加推奨
+
+            // JSでここに .open が付く
+        &.open {
+            .news-item_day::before {
+                transform: rotate(90deg);
+            }
+        }
+    }
+        &_day {
+            line-height: calc(36 / 24);
+            margin-right: 3rem;
+
+            &::before {
+                content: "▶";
+                margin-right: 1.2rem;
+                margin-left: 4rem;
+                display: inline-block; /* 回転させるために必要 */
+                /* ★アニメーションの設定 */
+                transition: transform 0.3s ease; /* 0.3秒かけて滑らかに変化 */
+            }
+        }
+
+
+        &_text {
+            &[style*="display: block"] {
+        display: flex !important;
+    }
+            width: 100%;
+            height: 21.1rem;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+            
+
+            & p {
+                text-align: left;
+                line-height: calc(36 / 16);
+                color: $color1;
+            }
+    }        
+}
+
+
+.font_color {
+    color: $color2;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
