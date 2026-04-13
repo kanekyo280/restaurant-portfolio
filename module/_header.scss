@@ -19,9 +19,17 @@
 .menu_lists {
     display: flex;
     gap: 5rem;
+    position: fixed;
+    top: calc(11rem / 2);
+    right: 14.3rem;
+    z-index: 1000;
 }
 
 .menu_list {
     color: $color1 !important;
     font-size: 2.4rem;
+
+    &:hover {
+        border-bottom: 0.1rem solid $color4;
+    }
 }

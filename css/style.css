@@ -53,11 +53,18 @@ body {
 .menu_lists {
   display: flex;
   gap: 5rem;
+  position: fixed;
+  top: 5.5rem;
+  right: 14.3rem;
+  z-index: 1000;
 }
 
 .menu_list {
   color: #202925 !important;
   font-size: 2.4rem;
+}
+.menu_list:hover {
+  border-bottom: 0.1rem solid #707070;
 }
 
 footer {
@@ -155,6 +162,10 @@ footer {
   border-radius: 2rem;
   color: #E3E3E3;
 }
+.btn:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
 
 .concept {
   background-image: linear-gradient(rgba(226, 226, 226, 0.5), rgba(226, 226, 226, 0.5)), url(../img/image-from-rawpixel-id-5979119-original.png);
@@ -221,6 +232,7 @@ footer {
   margin: 10rem 0 4rem;
 }
 .dish-inner {
+  height: 39.3rem;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -231,6 +243,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  height: 100%;
 }
 .dish-text_title {
   font-size: 2.4rem;
@@ -238,13 +251,13 @@ footer {
   writing-mode: vertical-rl;
   margin: 0 auto;
   font-weight: 400;
-  height: inherit;
+  letter-spacing: 1rem;
 }
-.dish p {
+.dish-text p {
   line-height: 2.25;
   background-color: #202925;
   color: #E3E3E3;
-  padding: 1rem;
+  padding: 2rem;
   margin-top: auto;
   margin-bottom: 0;
 }

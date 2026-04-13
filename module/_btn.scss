@@ -7,4 +7,9 @@
     margin: 0 auto;
     border-radius: 2rem;
     color: #E3E3E3;
+
+    &:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
 }
