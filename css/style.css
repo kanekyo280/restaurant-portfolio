@@ -207,6 +207,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
+  height: 70rem;
 }
 
 .concept {
@@ -263,34 +264,34 @@ footer {
 }
 
 .pickup {
-  height: 76.6rem;
+  height: auto;
+  padding-bottom: 10rem;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .pickup_title {
   margin-top: 10rem;
-  margin-bottom: 5.5rem;
+  margin-bottom: 4rem;
 }
 .pickup-inner {
   display: flex;
   justify-content: center;
   position: relative;
   width: 100%;
-  height: 100%;
 }
 .pickup_img {
   height: 32rem;
   width: 44rem;
-  position: absolute;
-  top: 0;
-  left: 44rem;
+  position: relative;
+  object-fit: cover;
   z-index: 2;
+  margin-right: -5rem;
 }
 .pickup-text {
-  position: absolute;
-  top: 10.4rem;
-  right: 39rem;
+  position: relative;
+  z-index: 1;
+  margin-top: 10.4rem;
 }
 .pickup-text_title {
   text-align: left;
@@ -416,6 +417,48 @@ footer {
   color: #E3E3E3;
   font-weight: 400;
   font-size: 2.4rem;
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    overflow-x: hidden; /* 横方向のはみ出しを隠す */
+  }
+  .main-img {
+    height: 62rem;
+    width: 100%;
+  }
+  .title-log {
+    width: 10.5rem;
+    height: 5rem;
+  }
+  .menu_lists {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: transform 0.5s ease 0s;
+    z-index: 999;
+    cursor: pointer;
+    background-color: #202925;
+    border-radius: 50%;
+  }
+  .hamburger_bar {
+    width: 2rem;
+    background: white;
+    transition: 0.3s;
+    transform: translate(-50%, -50%);
+  }
+  .hamburger_bar:nth-of-type(1) {
+    top: 20%;
+  }
+  .hamburger_bar:nth-of-type(2) {
+    top: 50%;
+  }
+  .hamburger_bar:nth-of-type(3) {
+    top: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
