@@ -183,22 +183,26 @@ footer {
 }
 
 .text-inner {
-  width: 69rem;
+  width: 64rem;
   height: 34rem;
   background: #202925;
   color: #E2E2E2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 4rem 7.5rem 6rem;
 }
 .text-inner_title {
   font-size: 2.4rem;
-  margin: 4rem 0;
+  margin-bottom: 4rem;
   font-weight: 400;
 }
 .text-inner p {
   line-height: 2.25;
   text-align: left;
+}
+.text-inner p .mobile {
+  display: none;
 }
 
 .main-img {
@@ -207,10 +211,12 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
+  height: 70rem;
 }
 
 .concept {
   height: 64.2rem;
+  width: 100%;
 }
 .concept_title {
   margin: 8rem 0 4rem;
@@ -218,8 +224,13 @@ footer {
 .concept-inner {
   display: flex;
   align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
+  justify-content: center;
+  height: 34rem;
+}
+.concept_img {
+  width: 34rem;
+  height: 34rem;
+  background-size: cover;
 }
 .concept-text {
   margin-left: 5rem;
@@ -263,34 +274,34 @@ footer {
 }
 
 .pickup {
-  height: 76.6rem;
+  height: auto;
+  padding-bottom: 10rem;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .pickup_title {
   margin-top: 10rem;
-  margin-bottom: 5.5rem;
+  margin-bottom: 4rem;
 }
 .pickup-inner {
   display: flex;
   justify-content: center;
   position: relative;
   width: 100%;
-  height: 100%;
 }
 .pickup_img {
   height: 32rem;
   width: 44rem;
-  position: absolute;
-  top: 0;
-  left: 44rem;
+  position: relative;
+  object-fit: cover;
   z-index: 2;
+  margin-right: -5rem;
 }
 .pickup-text {
-  position: absolute;
-  top: 10.4rem;
-  right: 39rem;
+  position: relative;
+  z-index: 1;
+  margin-top: 10.4rem;
 }
 .pickup-text_title {
   text-align: left;
@@ -416,6 +427,68 @@ footer {
   color: #E3E3E3;
   font-weight: 400;
   font-size: 2.4rem;
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    overflow-x: hidden; /* 横方向のはみ出しを隠す */
+  }
+  /* ーーーーーートップページーーーーーーーーーー */
+  .main-img {
+    height: 62rem;
+    background-position: 45% center;
+    background-size: cover;
+    width: 100vw;
+  }
+  .header_inner {
+    padding: 1.5rem 2rem 0 1.5rem;
+    position: relative;
+  }
+  .title-log {
+    width: 10.5rem;
+    height: 5rem;
+  }
+  .menu_lists {
+    display: none;
+  }
+  .hamburger-fix-wrapper {
+    position: fixed; /* ★画面に固定する役割 */
+    top: 1.5rem;
+    right: 2rem; /* なぜか表示されない */
+    z-index: 1000;
+  }
+  .hamburger {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    transition: transform 0.5s ease 0s;
+    z-index: 999;
+    cursor: pointer;
+    background-color: #202925;
+    border-radius: 50%;
+    position: relative;
+  }
+  .hamburger_bar {
+    width: 2.5rem;
+    height: 0.2rem;
+    background: #E3E3E3;
+    transition: 0.3s;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    border-radius: 0.2rem;
+  }
+  .hamburger_bar:nth-of-type(1) {
+    top: 30%;
+  }
+  .hamburger_bar:nth-of-type(2) {
+    top: 50%;
+  }
+  .hamburger_bar:nth-of-type(3) {
+    top: 70%;
+  }
+  /* ーーーーーーセクションタイトルーーーーーーーーー */
+  /* ーーーーーconceptエリアーーーーーーーーーーー */
 }
 
 /*# sourceMappingURL=style.css.map */
