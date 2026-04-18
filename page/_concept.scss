@@ -1,5 +1,6 @@
 .concept {
     height: 64.2rem;
+    width: 100%;
 
     &_title {
         margin: 8rem 0 4rem;
@@ -9,8 +10,14 @@
     &-inner {
         display: flex;
         align-items: center;
-        max-width: 1000px;
-        margin: 0 auto; // 中央寄せ
+        justify-content: center;
+        height: 34rem;
+    }
+
+    &_img {
+        width: 34rem;
+        height: 34rem;
+        background-size: cover;
     }
 
     &-text {

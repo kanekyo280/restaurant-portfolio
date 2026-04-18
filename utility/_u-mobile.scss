@@ -4,9 +4,20 @@
 body {
     overflow-x: hidden; /* 横方向のはみ出しを隠す */
 }
+
+/* ーーーーーートップページーーーーーーーーーー */
+
 .main-img {
     height: 62rem;
-    width: 100%;
+    background-position: 45% center;
+    background-size: cover;
+    width: 100vw;
+}
+
+
+.header_inner {
+    padding: 1.5rem 2rem 0 1.5rem;
+    position: relative;
 }
 
 .title-log {
@@ -18,26 +29,38 @@ body {
     display: none;
 }
 
+.hamburger-fix-wrapper {
+    position: fixed; /* ★画面に固定する役割 */
+    top: 1.5rem;
+    right: 2rem; /* なぜか表示されない */
+    z-index: 1000;
+}
+
 .hamburger {
     display: block;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 5rem;
+    height: 5rem;
     transition: transform 0.5s ease 0s;
     z-index: 999;
     cursor: pointer;
     background-color: $color1;
     border-radius: 50%;
+    position: relative;
 }
 
 .hamburger_bar {
-    width: 2rem;
-    background: white;
+    width: 2.5rem;
+    height: 0.2rem;
+    background: $color2;
     transition: 0.3s;
     transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    border-radius: 0.2rem;
 }
 
 .hamburger_bar:nth-of-type(1) {
-    top: 20%;
+    top: 30%;
 }
 
 .hamburger_bar:nth-of-type(2) {
@@ -45,6 +68,60 @@ body {
 }   
 
 .hamburger_bar:nth-of-type(3) {
-    top: 80%;
+    top: 70%;
 }
+
+/* ーーーーーーセクションタイトルーーーーーーーーー */
+// #section {
+//     text-align: left;
+// }
+
+// .section_title {
+//     font-size: 2.4rem;
+//     margin: 4rem 0 2rem 2rem;
+// }
+
+/* ーーーーーconceptエリアーーーーーーーーーーー */
+// .concept_title {
+//     margin: 4rem 0 2rem 2rem;
+// }
+
+// .concept-inner {
+//     display: block;
+//     text-align: center;
+// }
+
+// .concept_img {
+//     width: 24rem;
+//     height: 16rem;
+//     margin: 0 auto;
+// }
+
+// .text-inner {
+//     display: block;
+//     text-align: left;
+//     padding: 2rem 1.5rem;
+// }
+
+// .concept-text {
+//     margin: 0;
+//     width: 100%;
+
+//     &_title {
+//         text-align: left;
+//         margin: 0;
+//     }
+
+//     & p {
+//         line-height: calc(23 / 16);
+
+//         &.pc {
+//             display: none;
+//         }
+//         &.mobile {
+//             display: block;
+//         }
+//     }
+// }
+
 }

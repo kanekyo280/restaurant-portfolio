@@ -1,22 +1,24 @@
 .text-inner {
-    width: 69rem;
+    width: 64rem;
     height: 34rem;
     background: #202925;; // デザインに合わせて色調整
     color: #E2E2E2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding: 4rem 7.5rem 6rem;
 
     &_title {
         font-size: 2.4rem;
-        margin: 4rem 0;
+        margin-bottom: 4rem ;
         font-weight: 400;
     }
-
     & p {
         line-height: calc(36 / 16);
         text-align: left;
-    }
 
+        .mobile {
+            display: none;
+        }
+    }
 }
