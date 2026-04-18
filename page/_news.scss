@@ -28,7 +28,7 @@
             width: 100%;
             display: flex;
             align-items: center;
-            cursor: pointer; // クリックできることを示すために追加推奨
+            cursor: pointer;
 
             // JSでここに .open が付く
         &.open {
@@ -46,8 +46,7 @@
                 margin-right: 1.2rem;
                 margin-left: 4rem;
                 display: inline-block; /* 回転させるために必要 */
-                /* ★アニメーションの設定 */
-                transition: transform 0.3s ease; /* 0.3秒かけて滑らかに変化 */
+                transition: transform 0.3s ease; 
             }
         }
 
