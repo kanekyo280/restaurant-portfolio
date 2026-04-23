@@ -30,7 +30,7 @@ body {
 }
 
 .hamburger-fix-wrapper {
-    position: fixed; /* ★画面に固定する役割 */
+    position: block; /* ★画面に固定する役割 */
     top: 1.5rem;
     right: 2rem; /* なぜか表示されない */
     z-index: 1000;
@@ -43,7 +43,7 @@ body {
     transition: transform 0.5s ease 0s;
     z-index: 999;
     cursor: pointer;
-    background-color: $color1;
+    background-color: #000;
     border-radius: 50%;
     position: relative;
 }
@@ -51,7 +51,7 @@ body {
 .hamburger_bar {
     width: 2.5rem;
     height: 0.2rem;
-    background: $color2;
+    background: #fff;
     transition: 0.3s;
     transform: translate(-50%, -50%);
     position: absolute;

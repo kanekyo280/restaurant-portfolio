@@ -298,7 +298,8 @@ footer {
   height: 32rem;
   width: 44rem;
   position: relative;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 2;
   margin-right: -5rem;
 }
@@ -345,7 +346,8 @@ footer {
 .owner_img {
   width: 37rem;
   height: 45rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .infor {
@@ -362,7 +364,8 @@ footer {
 .infor-inner .infor-item {
   width: 24rem;
   height: 24rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-right: 4rem;
 }
 .infor-inner .infor-item:last-child {
@@ -492,6 +495,4 @@ footer {
   }
   /* ーーーーーーセクションタイトルーーーーーーーーー */
   /* ーーーーーconceptエリアーーーーーーーーーーー */
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
